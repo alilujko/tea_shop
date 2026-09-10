@@ -38,9 +38,10 @@ sent_http().then( (data)=>{
             all_cost += parseInt(price.innerText.split()[0])
             const name = products.querySelectorAll('h4')
 
+            text.textContent = 'Загальна сумма:' + all_cost
+
             name.forEach((el) => {
                 tixt = el.innerText
-                text.textContent = 'Загальна сумма:' + el.innerText
                 cort.push(el.innerText)
             })
 
