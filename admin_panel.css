@@ -1,0 +1,63 @@
+body{
+    height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 20%;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    align-items: center;
+    gap: 3%;
+    background-color: #005A3E;
+    justify-content: center;
+}
+
+.yes_reg{
+    display: none;
+}
+
+.login{
+    width: 60%;
+    height: 12%;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+}
+
+.kod{
+    width: 60%;
+    height: 12%;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+}
+
+.reg{
+    background-color: rgb(78, 78, 226);
+    border: none;
+    border-radius: 25px;
+    width: 60%;
+    height: 12%;
+    cursor: pointer;
+    transition: transform 0.15s linear;
+}
+
+.reg:hover{
+    transform: scale(1.1) translateY(4px);
+}
+
+.text{
+    width: 73%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: white;
+    font-size: 200%; 
+    background-color: rgb(78, 78, 226); 
+    border-radius: 10px; 
+    border: none;
+    text-align: center;
+}
