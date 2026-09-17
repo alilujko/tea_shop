@@ -41,7 +41,7 @@ sent_http().then( (data)=>{
                 change.classList.remove('change')
 
                 async function change_data(){
-                    const response = await fetch('https://whisking-remark-quickly.ngrok-free.dev/change_data', {
+                    const response = await fetch('https://backend-server-tea-shop.onrender.com/change_data', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -78,7 +78,7 @@ async function reg(){
     login_read = login.value
     password_read = password.value
 
-    const response = await fetch('https://whisking-remark-quickly.ngrok-free.dev/register', {
+    const response = await fetch('https://backend-server-tea-shop.onrender.com/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -111,7 +111,7 @@ btn.addEventListener('click', async ()=>{
 })
 
 async function sent_http(){
-    const responce = await fetch("https://whisking-remark-quickly.ngrok-free.dev/get_menu", {method: 'GET', headers:{
+    const responce = await fetch("https://backend-server-tea-shop.onrender.com/get_menu", {method: 'GET', headers:{
         "ngrok-skip-browser-warning": "true"
     }})
 

@@ -77,7 +77,7 @@ for (let products of product){
 }  
 
 async function sent_http(){
-    const responce = await fetch("https://whisking-remark-quickly.ngrok-free.dev/get_menu", {method: 'GET', headers:{
+    const responce = await fetch("https://backend-server-tea-shop.onrender.com/get_menu", {method: 'GET', headers:{
         "ngrok-skip-browser-warning": "true"
     }})
 
