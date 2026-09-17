@@ -35,7 +35,7 @@ sent_http().then( (data)=>{
             change.classList.remove('change-invis')
             let but = data[element]["name"]
 
-            sumbit_new_change.addEventListener('click', ()=>{
+            sumbit_new_change.addEventListener('click', async ()=>{
                 main_box.style = 'display: grid;'
                 change.classList.add('change-invis')
                 change.classList.remove('change')
@@ -48,9 +48,9 @@ sent_http().then( (data)=>{
                         },
                         body: JSON.stringify({
                             old_name: but,
-                            new_name: n_name,
-                            new_image: n_image,
-                            new_price: n_price
+                            new_name: n_name.value,
+                            new_image: n_image.value,
+                            new_price: parseInt(n_price.value)
                         })
 
                     });
@@ -61,7 +61,7 @@ sent_http().then( (data)=>{
 
                 }
 
-                dt = change_data()
+                dt = await change_data()
                 console.log(dt.message)
 
             })
